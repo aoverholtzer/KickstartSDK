@@ -154,6 +154,8 @@ struct ExchangeAdvertisementCard: View {
         }
         #if os(visionOS)
         .glassBackgroundEffect(in: .rect(cornerRadius: cornerStyle.cornerRadius))
+        #elseif os(macOS) || targetEnvironment(macCatalyst)
+        .background(Material.thin, in: .rect(cornerRadius: cornerStyle.cornerRadius))
         #else
         .background(.windowBackground, in: .rect(cornerRadius: cornerStyle.cornerRadius))
         #endif

@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Provides platform-specific sizing and spacing for advertisement layouts.
-enum ExchangeAdLayoutMetrics {
+public enum ExchangeAdLayoutMetrics {
     static let maximumDecorationScale = 1.25
     static let cardCornerRadius = 20.0
 

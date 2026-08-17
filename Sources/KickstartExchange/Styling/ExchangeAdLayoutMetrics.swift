@@ -25,9 +25,9 @@ public enum ExchangeAdLayoutMetrics {
     static let horizontalContentSpacing: CGFloat? = 24
     static let cardPadding = 20.0
     #else
-    static let maximumCardWidth = 450.0
+    public static let maximumCardWidth = 450.0
     static let horizontalContentSpacing: CGFloat? = nil
-    static let cardPadding = 10.0
+    public static let cardPadding = 10.0
     #endif
 
     #if os(tvOS)
@@ -35,7 +35,7 @@ public enum ExchangeAdLayoutMetrics {
     #elseif os(watchOS)
     static let appIconLength = 48.0
     #else
-    static let appIconLength = 64.0
+    public static let appIconLength = 64.0
     #endif
 
     #if os(tvOS)
